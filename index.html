@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KawaiiRadio</title>
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	<div id="loading">
+<!-- 		<canvas id="balls"></canvas> -->
+		<div id="loader"></div>
+		<span id="schedlue">0%</span>
+		<span id="schedlue-slide"></span>
+		<div id="entry">
+			<button id="haru" class="entryButtons">Let's Go</button>
+		</div>
+	</div>
+	
+	<div id="chocolateCont">
+		<canvas id="chocolate"></canvas>
+		<img src="img/chocolate.png" id="chocolateSource" class="imgsource">
+	</div>
+
+	<div id="cont">
+		<canvas id="layer1"></canvas>
+		<canvas id="layer2"></canvas>
+		<canvas id="layer3"></canvas>
+		<canvas id="mask"></canvas>
+		<canvas id="haruCanvas"></canvas>
+		<canvas id="natsuCanvas"></canvas>
+		<canvas id="akiCanvas"></canvas>
+		<canvas id="fuyuCanvas"></canvas>
+	</div>
+	
+	<div>
+<!-- 春 -->
+		<img src="img/haru.jpg" id="haru-bg" class="bg-img">
+		<img src="img/hana1.png" alt="" id="hana1" class="imgsource">
+		<img src="img/hana2.png" alt="" id="hana2" class="imgsource">
+		<img src="img/hana3.png" alt="" id="hana3" class="imgsource">
+		<img src="img/hana4.png" alt="" id="hana4" class="imgsource">
+<!-- 夏 -->
+		<img src="img/natsu.jpg" id="natsu-bg" class="bg-img">
+<!-- 秋 -->
+		<img src="img/aki.jpg" id="aki-bg" class="bg-img">
+		<img src="img/mapleleaf1.png" alt="" id="mapleleaf1" class="imgsource">
+		<img src="img/mapleleaf2.png" alt="" id="mapleleaf2" class="imgsource">
+		<img src="img/mapleleaf3.png" alt="" id="mapleleaf3" class="imgsource">
+<!-- 冬 -->
+		<img src="img/fuyu.jpg" id="fuyu-bg" class="bg-img">
+		<img src="img/snow.png" id="snowimg" class="imgsource">
+	</div>
+<!-- 幻灯片 -->
+	<div id="slide-img">
+		<div id="blinds">
+			<canvas id="hide"></canvas>
+			<canvas id="show"></canvas>
+		</div>
+	</div>
+<!-- 音频可视化 -->
+	<div id="audio-view">
+		<div id="view-cont">
+			<canvas id="view"></canvas>
+		</div>
+	</div>
+<!-- 播放信息 -->
+	<div id="play-info">
+		<div id="now">NOWPLAYING:ARForest - Pistachio</div>
+		<div id="line">&nbsp</div>
+		<div id="next">NEXT:KATOMORI - Candy Rain</div>
+	</div>
+<!-- 菜单 -->
+	<nav id="menu">
+		<ul>
+			<li><a href="" id="downloadHref"><button id="download" class="button">下载本歌</button></a></li>
+			<li><button id="about" class="button">关于本站</button></li>
+		</ul>
+	</nav>
+<!-- 本站信息 -->
+	<section id="info">
+		<span>About This Website</span>
+		<article>
+			<p>这里是一个以Future Bass为主的kawaii music电台。</p>
+			<span>什么是Future Bass?</span>
+			<p>Future Bass全名为Future Bass Music，是Bass Music的一种衍生型流派以及统称。<br>
+			Bass Music的主要流派有：EDM Trap、Dubstep、Moombahton、Glitch hop、Drum&Bass。<br>
+			Bass Music制作人会以原本的风格为基础，加入future bass特殊的制作特征，所形成的风格即为future bass。<br>
+			来自日本的kawaii bass同是future bass其中的一类，与日本的流行音乐与Bass Music有关。<br>
+			简而言之，所有加入“future bass”特征的Bass music都可以称为future bass。
+			</p>
+		</article>
+				<address>
+			<span>Version : 1.0.0</span>
+			<br>
+			<span>Builder : 风筒桑</span>
+			<br>
+			<strong>注 ：部分设计参考自<a href="https://www.youtube.com/watch?v=RDgudOSW8Dg">https://www.youtube.com/watch?v=RDgudOSW8Dg</a></strong>
+		</address>
+		<button id="close">Close</button>
+	</section>
+
+	<img src="img/001.jpg" id="source">
+	<source id="audio-source"></source>
+</body>
+	<script src='./js/chocolate.js'></script>
+	<script src='./js/main.js'></script>
+	<script src='./js/audioview.js'></script>
+	<script src='./js/loading.js'></script>
+	<script src='./js/blinds.js'></script>
+	<script src='./js/transitionAnimation.js'></script>
+</html>
